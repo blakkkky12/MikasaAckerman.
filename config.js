@@ -45,7 +45,7 @@ global.owner = ['6281365681189'] //ur owner number
 global.ownername = "nazuaff"
 global.ytname = "DYRROTH YT" //ur yt chanel name
 global.socialm = "GitHub: Warikrr" //ur github or insta name
-global.location = "Indonesia, Kalimantan Selatan, Kotabaru" //ur location
+global.location = "Indonesia, Pekanbaru, Riau" //ur location
 
 //bot bombdy
 global.botname = "Mikasa||Ackerman" //ur bot name
@@ -59,7 +59,7 @@ global.ownertag = ['fauzan'] //ur owner tag
 global.ownernummenu = ['6281365681189'] //ur owner number in menu and all
 global.watermark = "MikasaBotz" //ur watermark
 global.botscript = "https://instagram.com/arrhmdfauzan_?igshid=YmMyMTA2M2Y"
-global.linkz1 = "https://chat.whatsapp.com/FBYIVNcIw2gCAXZWyjNBjw"
+global.linkz1 = "https://chat.whatsapp.com/KXAcnoSD5quG2V7orGth4M"
 global.linkz2 = "https://instagram.com/arrhmdfauzan_?igshid=YmMyMTA2M2Y"
 
 //Bot theme media
