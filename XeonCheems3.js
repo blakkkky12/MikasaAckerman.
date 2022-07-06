@@ -9148,7 +9148,7 @@ for (let i of anu) {
 await sleep(1500)
 let btn = [{
 urlButton: {
-displayText: 'YouTube 🍓',
+displayText: 'Instagram 🍓',
 url: `${global.websitex}`
 }
 }, {
@@ -9189,7 +9189,7 @@ for (let yoi of anu) {
 await sleep(1500)
 let btn = [{
 urlButton: {
-displayText: 'YouTube 🍓',
+displayText: 'Instagram 🍓',
 url: `${global.websitex}`
 }
 }, {
@@ -10945,8 +10945,8 @@ case 'tqtt':
 	if (isBanChat) return reply(mess.banChat)
 reply(`Thanks to
 •LORD BUDDHA
-•Xeon (Me)
-•ArullOfc
+•Xeon 
+•nazuaff x mikasa
 And all creator Bot`)
 default:
 if (budy.startsWith('=>')) {
