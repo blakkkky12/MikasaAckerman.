@@ -1751,13 +1751,11 @@ if (isBanChat) return reply(mess.banChat)
 reply(` Don't forget to join yeah!
 
 *GROUP 1*
-https://chat.whatsapp.com/F6CAAOhrORm1sPdq6cRKASl
-
+https://chat.whatsapp.com/KXAcnoSD5quG2V7orGth4M
 *GROUP 2*
-https://chat.whatsapp.com/GdXv5LxKfDPHJ4WOH2rNu5l
-
+https://chat.whatsapp.com/FBYIVNcIw2gCAXZWyjNBjw
 *GROUP 3*
-https://chat.whatsapp.com/GdXv5LxKfDPHJ4WOH2rNu5l`)
+SOON`)
 break
 case 'getsxvdxcmd': {
 if (isBan) return reply(mess.ban)	 			
