@@ -1651,7 +1651,7 @@ if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
 let buttonmenu = [
-        	{ urlButton: { displayText: `My YouTube`, url : `${websitex}` } },
+        	{ urlButton: { displayText: `My Instagram`, url : `${websitex}` } },
             { urlButton: { displayText: `Source Code`, url: `${botscript}` } },
             { quickReplyButton: { displayText: `All Menu`, id: 'allmenu'} },
             { quickReplyButton: { displayText: `List Menu`, id: 'command'} },
@@ -1662,7 +1662,7 @@ let buttonmenu = [
 case 'sc': case 'script': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
 	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-teks = `*「 ${global.botname} Script 」*\n\nYouTube: ${global.websitex}\nSource Code: ${global.botscript}\n\nDont forget to donate 🍜`
+teks = `*「 ${global.botname} Script 」*\n\nInstagram: ${global.websitex}\nSource Code: ${global.botscript}\n\nDont forget to donate 🍜`
 let buttons = [
 {buttonId: `menu`, buttonText: {displayText: 'Back Menu'}, type: 1}
 ]
@@ -1674,12 +1674,12 @@ footer: `${botname}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"Donasi Lah,Pake Subscribe juga Boleh",
-body: "Click to Subscribe", 
+title:"Donasi Lah,Pake Follow juga Boleh",
+body: "Click to Instagram", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
 mediaUrl: 'https://telegra.ph/file/298ba283af16b6a0ac3c5.jpg',
-sourceUrl: "https://youtube.com/channel/UC1ikkqsPvtWuE_QonsET1yg"
+sourceUrl: "https://instagram.com/arrhmdfauzan_"
 }}
 }
 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -1706,7 +1706,7 @@ case 'me': case 'inventory': case 'profile':{
      teksehmazeh += `*🐘Elephant* : ${getGajah(m.sender)}\n\n`
      teksehmazeh += `_*${pushname}*_`
      let butRun = [
-        	{ urlButton: { displayText: `YouTube 🍒`, url : `${websitex}` } },
+        	{ urlButton: { displayText: `Instagram 🍒`, url : `${websitex}` } },
         	{ urlButton: { displayText: `Script 🍜`, url : `${botscript}` } },
             { quickReplyButton: { displayText: `Owner 🤣`, id: 'owner'}},
             { quickReplyButton: { displayText: `Leaderboard 🎢`, id: 'leaderboard'} }
