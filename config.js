@@ -101,11 +101,11 @@ global.mess = {
     group: '*Khusus Didalam Group*',
     private: '*Khusus Chat Private*',
     bot: '*Khusus Yang Jadibot*',
-    wait: '*Sabar...Orang sabar disayang janda*',
+    wait: '*Sabar...Tod*',
     linkm: '*Linknya Mana Tod?*',
-    error: 'Error!',
+    error: 'Error Asu!',
     ban: 'You have been banned by the owner, if you want to be unbanned, chat owner.',
-    nsfw: 'The nsfw feature has not been activated, please contact the admin to activate',
+    nsfw: 'Fitur nsfw belum diaktifkan, silahkan hubungi admin untuk aktivasi',
     banChat: 'The bot was banned in this group, please contact the owner to unban'
 }
 global.limitawal = {
@@ -114,12 +114,12 @@ global.limitawal = {
     monayawal: 1000
 }
    global.rpg = {
-   darahawal: 100,
-   besiawal: 95,
-   goldawal: 30,
-   emeraldawal: 8,
-   umpanawal: 10,
-   potionawal: 5
+   darahawal: 9999999,
+   besiawal: 999999,
+   goldawal: 999999,
+   emeraldawal: 99999,
+   umpanawal: 999999,
+   potionawal: 99999
 }
 global.limitawal = {
     rakyat: "Infinity",
