@@ -819,7 +819,7 @@ let reason = user.afkReason || ''
 reply(`
 Don't tag him!
 He's in AFK ${reason ? 'with reason ' + reason : 'no reason'}
-During ${clockString(new Date - afkTime)}
+Selama ${clockString(new Date - afkTime)}
 `.trim())
 }
 
