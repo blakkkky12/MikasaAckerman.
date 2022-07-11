@@ -818,7 +818,7 @@ if (!afkTime || afkTime < 0) continue
 let reason = user.afkReason || ''
 reply(`
 Don't tag him!
-He's in AFK ${reason ? 'with reason ' + reason : 'no reason'}
+Dia di AFK ${reason ? 'with reason ' + reason : 'no reason'}
 Selama ${clockString(new Date - afkTime)}
 `.trim())
 }
