@@ -695,8 +695,8 @@ const order = generateWAMessageFromContent(jid, proto.Message.fromObject({
 "itemCount": itcount, // Change the Item Count
 "status": "INQUIRY", // Don't Replace
 "surface": "CATALOG", // Don't Replace
-"orderTitle": Mikasa Ackerman, // Change the title
-"message": Botz, // Change Message
+"orderTitle": mikasa ackerman, // Change the title
+"message": botz, // Change Message
 "sellerJid": sellers, // Change the seller
 "token": tokens, // Change the token
 "totalAmount999999": ammount, // Change the Total Amount
