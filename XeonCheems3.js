@@ -817,8 +817,8 @@ let afkTime = user.afkTime
 if (!afkTime || afkTime < 0) continue
 let reason = user.afkReason || ''
 reply(`
-Don't tag him!
-Dia di AFK ${reason ? 'with reason ' + reason : 'no reason'}
+Jangan tag dia!
+Dia sedang AFK ${reason ? 'with reason ' + reason : 'no reason'}
 Selama ${clockString(new Date - afkTime)}
 `.trim())
 }
@@ -826,8 +826,8 @@ Selama ${clockString(new Date - afkTime)}
 if (db.users[m.sender].afkTime > -1) {
 let user = global.db.users[m.sender]
 reply(`
-He's in AFK/Offline ${user.afkReason ? ' after ' + user.afkReason : ''}
-During ${clockString(new Date - user.afkTime)}
+Dia  AFK/Offline ${user.afkReason ? ' after ' + user.afkReason : ''}
+Selama ${clockString(new Date - user.afkTime)}
 `.trim())
 user.afkTime = -1
 user.afkReason = ''
