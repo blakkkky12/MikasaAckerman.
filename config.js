@@ -25,11 +25,11 @@ const fs = require("fs")
 const chalk = require("chalk")
 
 //aumto functioner
-global.autoTyping = true //auto tying in gc (true to on, false to off)
+global.autoTyping = false //auto tying in gc (true to on, false to off)
 global.autoreadpmngc = true //auto reading in gc and pm (true to on, false to off)
 global.autoReadGc = true //auto reading in gc (true to on, false to off)
 global.autoReadAll = true // auto reading in all pchat gc and status (true to on, false to off)
-global.autoRecord = false //auto recording (true to on, false to off)
+global.autoRecord = true //auto recording (true to on, false to off)
 global.available = true //auto available (true to on, false to off)
 
 //documents variants
@@ -101,9 +101,9 @@ global.mess = {
     group: '*Khusus Didalam Group*',
     private: '*Khusus Chat Private*',
     bot: '*Khusus Yang Jadibot*',
-    wait: '*Sabar...Tod*',
-    linkm: '*Linknya Mana Tod?*',
-    error: 'Error Asu!',
+    wait: '*Sabar Sayangg*',
+    linkm: '*Linknya Mana Sayang?*',
+    error: 'Error beb!',
     ban: 'You have been banned by the owner, if you want to be unbanned, chat owner.',
     nsfw: 'Fitur nsfw belum diaktifkan, silahkan hubungi admin untuk aktivasi',
     banChat: 'The bot was banned in this group, please contact the owner to unban'
