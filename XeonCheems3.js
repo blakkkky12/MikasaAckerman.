@@ -3957,6 +3957,23 @@ case "addcmd":
           reply("the sticker tag");
         }
  break;
+ case 'triggered':
+                
+                if (isImage || isQuotedImage) {
+                    let encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
+                    let media = await xeon.downloadAndSaveMediaMessage(encmedia)
+                    var tolink = await uptotele(media)
+                let ane = await getBuffer(`https://some-random-api.ml/canvas/triggered?avatar=${tolink}`)
+                fs.writeFileSync('./sticker/triggered.webp', ane)
+                exec(`webpmux -set exif ./sticker/data.exif ./sticker/triggered.webp -o ./sticker/triggered.webp`, async (error) => {
+                    if (error) return reply(mess.error.api)
+                    xeon.sendMessage(from, fs.readFileSync(`./sticker/triggered.webp`), sticker, {quoted: freply})
+                    
+                    fs.unlinkSync(`./sticker/triggered.webp`)	
+                })
+                }
+            
+                break
 case 'delcmd': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
