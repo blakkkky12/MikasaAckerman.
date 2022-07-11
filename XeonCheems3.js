@@ -3942,6 +3942,21 @@ locked: false,
 replay(mess.success)
 }
 break
+case "addcmd":
+      case "setcmd":
+        if (isQuotedSticker) {
+          if (!q)
+            return reply(`Usage : ${command} cmd and tag sticker`);
+          var kodenya =
+            mek.message.extendedTextMessage.contextInfo.quotedMessage.stickerMessage.fileSha256.toString(
+              "base64"
+            );
+          addCmd(kodenya, q);
+          fakestatus("Done!");
+        } else {
+          reply("the sticker tag");
+        }
+ break;
 case 'delcmd': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
