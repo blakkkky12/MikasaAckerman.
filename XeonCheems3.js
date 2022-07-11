@@ -5021,7 +5021,7 @@ teks += `${global.themeemoji} @${mem.id.split('@')[0]}\n`
 XeonBotInc.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
 }
 break
-case 'hidetag': {
+case 'hidetag': case 'h': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!m.isGroup) return replay(mess.group)
