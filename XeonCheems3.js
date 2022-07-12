@@ -10976,9 +10976,9 @@ case 'tqtt':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 reply(`Thanks to
-•LORD BUDDHA
-•Xeon 
-•nazuaff x mikasa
+*|•ALLAH SWT*
+*|•Xeon*
+*|•nazuaff x mikasa*
 And all creator Bot`)
 default:
 if (budy.startsWith('=>')) {
