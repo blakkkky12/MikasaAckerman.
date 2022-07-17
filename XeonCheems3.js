@@ -6715,7 +6715,7 @@ case 'image': {
                 XeonBotInc.sendMessage(m.chat, { image: { url: result }, caption: ` ${themeemoji} Media Url : `+result }, { quoted: m })
             }
             break
-case 'swm': case 'take': case 'stickerwm': {
+case 'swm': case 'colong': case 'stickerwm': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!args.join(" ")) return reply(`Example :\nswm ${global.author}|${global.packname}`)
