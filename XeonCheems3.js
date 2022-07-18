@@ -1600,7 +1600,7 @@ if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
 	                let btn = [{
                                 urlButton: {
-                                    displayText: 'My YouTube',
+                                    displayText: 'My Instagram',
                                     url: `${websitex}`
                                 }
                             }, {
