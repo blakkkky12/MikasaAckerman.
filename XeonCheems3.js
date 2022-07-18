@@ -7283,42 +7283,6 @@ case 'wangy':
               awikwok = `${qq} ${qq} ${qq} ❤️ ❤️ ❤️ WANGY WANGY WANGY WANGY HU HA HU HA HU HA, aaah the smell of hair ${qq} smelly i want to smell the fragrance ${qq} AAAAAAAAH ~ Her hair.... aaah i want to stroke her hair too ~~ AAAAAH ${qq} first time out in anime is cute too ❤️ ❤️ ❤️ so AAAAAAAH ${qq} AAAAAA LUCCUUUUUUUUUUUUU............ ${qq} AAAAAAAAAAAAAAAAAAAAGH ❤️ ❤️ ❤️what ? ${qq} it's not real ? Just HELL you say ? no, no no no no no no no no no no no no no no no !! I DON'T CARE ABOUT THE REALITY, I DON'T CARE. ❤️ ❤️ ❤️ ${qq} me ... ${qq} on the laptop watching me, ${qq} .. you believe in me ? aaaaaaaaaaah thanks ${q} I don't want to give up ${qq} aaaaaah ❤️ ❤️ ❤️ YEAAAAAAAAAAAH I STILL HAVE ${qq} ALSO NOT THE SAME AAAAAAAAAAAAAAH`
              reply(awikwok)
               break
-let fetch = require('node-fetch')
-let timeout = 120000
-let poin = 500
-let handler = async (m, { conn, usedPrefix }) => {
-    conn.tebakkata = conn.tebakkata ? conn.tebakkata : {}
-    let id = m.chat
-    if (id in conn.tebakkata) {
-        conn.reply(m.chat, 'Masih ada soal belum terjawab di chat ini', conn.tebakkata[id][0])
-        throw false
-    }
-    let res = await fetch('https://raw.githubusercontent.com/BochilTeam/database/master/games/tebakkata.json')
-    if (!res.ok) throw await `${res.status} ${res.statusText}`
-    let data = await res.json()
-    let json = data[Math.floor(Math.random() * data.length)]
-    let caption = `
-${json.soal}
-
-Timeout *${(timeout / 1000).toFixed(2)} detik*
-Ketik ${usedPrefix}teka untuk bantuan
-Bonus: ${poin} XP
-`.trim()
-    conn.tebakkata[id] = [
-        await conn.sendBut(m.chat, caption, wm, 'Bantuan', '.teka', m),
-        json, poin,
-        setTimeout(async () => {
-            if (conn.tebakkata[id]) await conn.sendBut(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, wm, 'Tebak Kata', '.tebakkata', conn.tebakkata[id][0])
-            delete conn.tebakkata[id]
-        }, timeout)
-    ]
-}
-handler.help = ['tebakkata']
-handler.tags = ['game']
-handler.command = /^tebakkata/i
-
-module.exports = handler
-break
               case 'where':
             	if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
@@ -7626,7 +7590,6 @@ YesHorny = await getBuffer(NoHorny.result)
 XeonBotInc.sendMessage(from, {image:YesHorny},{quoted:m})
 } catch (e) {error("Error")}	
 break
-
    case 'spank':
       if (isBan) return reply(mess.ban)	 			
    if (isBanChat) return reply(mess.banChat)
