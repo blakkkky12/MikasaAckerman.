@@ -3205,40 +3205,7 @@ maker.textpro("https://textpro.me/break-wall-text-effect-871.html", [
   .then((data) => XeonBotInc.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
-case 'fuckboyserti': 				
-				// Subscribe Yoo
-				if (!isRegistered) return reply(ind.noregis())
-				if (isBanned) return reply('Maaf kamu sudah terbenned!')
-				if (isLimit(sender)) return reply(ind.limitend(pusname))
-				if (args.length < 1) return reply(`Textnya Mana Cuy?\n*Contoh ${prefix}fucekboyserti Mikasa`)
-				reply(ind.wait())
-				ct = body.slice(14)
-				anu = await getBuffer(`https://onlydevcity.xyz/FucekBoySerti/img.php?nama=${ct}`)
-				XeonBotInc.sendMessage(from, anu, image, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "*Mikasa||Ackerman*", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('XeonMedia/theme/cheemspic.jpg')} } }, caption: 'Nih Hasilnya Kak...'})
-				break
-case 'tagsticker':
-                    if (sender.split("@")[0] != owner) return reply("Command only for owner bot")
-                    if ((isMedia && !lol.message.videoMessage || isQuotedSticker) && args.length == 0) {
-                        const encmedia = isQuotedSticker ? JSON.parse(JSON.stringify(lol).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
-                        filePath = await XeonBotInc.downloadAndSaveMediaMessage(encmedia, filename = getRandom())
-                        var value = args.join(" ")
-                        var group = await XeonBotInc.groupMetadata(from)
-                        var member = group['participants']
-                        var mem = []
-                        member.map(async adm => {
-                            mem.push(adm.id.replace('c.us', 's.whatsapp.net'))
-                        })
-                        var options = {
-                            contextInfo: { mentionedJid: mem },
-                            quoted: mek
-                        }
-                        ini_buffer = fs.readFileSync(filePath)
-                        XeonBotInc.sendMessage(from, ini_buffer, sticker, options)
-                        fs.unlinkSync(filePath)
-                    } else {
-                        reply(`Tag sticker yang sudah dikirim`)
-                    }
-                    break
+
    
 case 'natural':
    if (isBan) return reply(mess.ban)	 			
