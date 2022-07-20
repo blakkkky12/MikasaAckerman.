@@ -7413,12 +7413,19 @@ case 'xxxbj':case 'exxxro':case 'cxxxum':case 'fexxxet':case 'yuxxxri':case 'tra
 	    buffer = `http://api.lolhuman.xyz/api/random2/${command}?apikey=${lolkey}`
                     XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:m})
     break
+case 'nhentaiserch': 
+	            	            	if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+	    buffer = `http://api.lolhuman.xyz/api/nhentaiserch?/${command}?apikey=${lolkey}`
+                    XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:m})
+    break
 case 'xxxcry':	anu = `http://api.lolhuman.xyz/api/random/cry?apikey=${lolkey}`
             	            	if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 reply(mess.wait)
 XeonBotInc.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.packname })
 break
+
 case 'kisxxxs3':	
             	            	if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
